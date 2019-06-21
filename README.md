@@ -2,11 +2,8 @@
 
 [![Build Status](https://travis-ci.org/rosberry/texstyle.svg?branch=master)](https://travis-ci.org/rosberry/texstyle)
 [![Swift Version](https://img.shields.io/badge/swift-5.0-orange.svg)](https://swift.org/)
-
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage)
-
 ![Swift Package Manager Compatible](https://img.shields.io/badge/spm-compatible-green.svg)
-
 [![codecov](https://codecov.io/gh/rosberry/texstyle/branch/master/graph/badge.svg)](https://codecov.io/gh/rosberry/texstyle)
 
 Texstyle allows you to format attributed strings easily.
@@ -43,6 +40,17 @@ Create a `Cartfile` that lists the framework and run `carthage update`. Follow t
 
 ```
 github "rosberry/Texstyle"
+```
+
+#### Swift Package Manager
+Add to your `Package.swift`:
+
+```swift
+let package = Package(
+    dependencies: [
+        .Package(url: "https://github.com/rosberry/texstyle", majorVersion: 1)
+    ]
+)
 ```
 
 #### Manually
