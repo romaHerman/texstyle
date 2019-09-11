@@ -2,6 +2,9 @@
 //  Copyright © 2019 Rosberry. All rights reserved.
 //
 
+#if canImport(UIKit)
+
+import UIKit
 @testable import Texstyle
 
 extension TextStyle {
@@ -118,3 +121,5 @@ private extension NSURL {
         return NSURL(string: urls.randomElement()!)
     }
 }
+
+#endif

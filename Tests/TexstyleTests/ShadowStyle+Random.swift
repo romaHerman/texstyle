@@ -2,6 +2,9 @@
 //  Copyright © 2019 Rosberry. All rights reserved.
 //
 
+#if canImport(UIKit)
+
+import UIKit
 @testable import Texstyle
 
 extension ShadowStyle {
@@ -15,3 +18,5 @@ extension ShadowStyle {
         return style
     }
 }
+
+#endif

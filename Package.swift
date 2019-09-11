@@ -1,17 +1,18 @@
 // swift-tools-version:5.1
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "texstyle",
+    name: "Texstyle",
     platforms: [
-    	.iOS(.v9), .tvOS(.v9)
+        .iOS(.v9), .tvOS(.v9)
     ],
     products: [
-        .library(name: "texstyle", targets: ["texstyle"])
+        .library(name: "Texstyle", targets: ["Texstyle"])
     ],
     targets: [
-        .target(name: "texstyle", path: "Texstyle/Texstyle"),
-        .testTarget(name: "texstyleTests", dependencies: ["texstyle"], path: "Texstyle/TexstyleTests")
+        .target(name: "Texstyle"),
+        .testTarget(name: "TexstyleTests", dependencies: ["Texstyle"])
     ]
 )

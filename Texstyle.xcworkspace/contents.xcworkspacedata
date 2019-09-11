@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Texstyle/../TexstyleExample/TexstyleExample.xcodeproj">
+      location = "group:">
    </FileRef>
    <FileRef
-      location = "group:Texstyle/Texstyle.xcodeproj">
+      location = "group:TexstyleExample/TexstyleExample.xcodeproj">
    </FileRef>
 </Workspace>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,7 @@
 		063FCBCF2271E575001C8962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063FCBCE2271E575001C8962 /* Assets.xcassets */; };
 		063FCBD22271E575001C8962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063FCBD02271E575001C8962 /* LaunchScreen.storyboard */; };
 		063FCBF32271F9AB001C8962 /* TextStyle+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FCBF22271F9AB001C8962 /* TextStyle+App.swift */; };
-		063FCBFB2271FAB3001C8962 /* Texstyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063FCBFA2271FAB3001C8962 /* Texstyle.framework */; };
-		063FCBFC2271FAB3001C8962 /* Texstyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 063FCBFA2271FAB3001C8962 /* Texstyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06E773FA23296A73005C257B /* Texstyle in Frameworks */ = {isa = PBXBuildFile; productRef = 06E773F923296A73005C257B /* Texstyle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				063FCBFC2271FAB3001C8962 /* Texstyle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +36,6 @@
 		063FCBD12271E575001C8962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		063FCBD32271E575001C8962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		063FCBF22271F9AB001C8962 /* TextStyle+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextStyle+App.swift"; sourceTree = "<group>"; };
-		063FCBFA2271FAB3001C8962 /* Texstyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Texstyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063FCBFB2271FAB3001C8962 /* Texstyle.framework in Frameworks */,
+				06E773FA23296A73005C257B /* Texstyle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +53,9 @@
 		063FCBBB2271E574001C8962 = {
 			isa = PBXGroup;
 			children = (
-				063FCBFA2271FAB3001C8962 /* Texstyle.framework */,
 				063FCBC62271E574001C8962 /* TexstyleExample */,
 				063FCBC52271E574001C8962 /* Products */,
+				06E773F6232967B3005C257B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +80,13 @@
 			path = TexstyleExample;
 			sourceTree = "<group>";
 		};
+		06E773F6232967B3005C257B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,6 +104,9 @@
 			dependencies = (
 			);
 			name = TexstyleExample;
+			packageProductDependencies = (
+				06E773F923296A73005C257B /* Texstyle */,
+			);
 			productName = TexstyleExample;
 			productReference = 063FCBC42271E574001C8962 /* TexstyleExample.app */;
 			productType = "com.apple.product-type.application";
@@ -348,6 +355,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06E773F923296A73005C257B /* Texstyle */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Texstyle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 063FCBBC2271E574001C8962 /* Project object */;
 }
