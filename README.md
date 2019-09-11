@@ -134,14 +134,14 @@ Add to your `Package.swift`:
 ```swift
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/rosberry/texstyle", majorVersion: 1)
+        .Package(url: "https://github.com/rosberry/texstyle", majorVersion: 0)
     ]
 )
 ```
 
 #### Manually
 
-Drag `Sources` folder from [last release](https://github.com/rosberry/Texstyle/releases) into your project.
+Drag `Texstyle` folder from [last release](https://github.com/rosberry/Texstyle/releases) into your project.
 
 ## About
 
