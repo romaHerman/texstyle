@@ -134,7 +134,7 @@ Add to your `Package.swift`:
 ```swift
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/rosberry/texstyle", majorVersion: 0)
+        .package(url: "https://github.com/rosberry/texstyle", majorVersion: 0)
     ]
 )
 ```
